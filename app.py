@@ -165,7 +165,7 @@ elif tabs == 'About':
                 - I'm going to finish this soon.
             """)
             st.write("For the meantime you can watch this youtube video to learn more about how to make a webpage!")
-            st.write("[Youtube](https://youtube.com/c/CodingIsFun)")
+            st.write("[Youtube](https://www.youtube.com/watch?v=VqgUkExPvLY&ab_channel=CodingIsFun)")
         with right_column:
             st_lottie(lottie_coding, height=450, key="coding")
 
