@@ -3,4 +3,3 @@ pillow
 streamlit-lottie
 streamlit-on-Hover-tabs
 requests
-base64
