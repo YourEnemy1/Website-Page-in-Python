@@ -77,7 +77,7 @@ if tabs =='Home':
             st.write("---")
             st.title("This is my webpage")
             st.subheader("Hi :wave:, I am Richmond E. Hinggo")
-            st.write("I am a Computer Engineering students from SNSU")
+            st.write("I'm a Computer Engineering students from SNSU")
             st.write("To know my projects visit my github link below.")
             st.write("[Github Link Here](https://github.com/YourEnemy1)")
         with column_right:
