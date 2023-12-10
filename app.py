@@ -4,7 +4,6 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 from st_on_hover_tabs import on_hover_tabs
 import base64
-import time
 
 st.set_page_config(page_title="My Webpage", page_icon=":world_map:", layout="wide")
 
@@ -81,13 +80,7 @@ if tabs =='Home':
             st.subheader("Hi :wave:, I am Richmond E. Hinggo")
             st.write("I am a Computer Engineering students from SNSU")
             st.write("To know my projects visit my github link below.")
-            # st.write()
-            bar = st.progress(0)
-            with st.spinner(text='Creating Github Link'):
-                time.sleep(3)
-                st.success("[Github Link Here](https://github.com/YourEnemy1)")
-                bar.progress(100)
-            
+            st.write("[Github Link Here](https://github.com/YourEnemy1)")
         with column_right:
             st.write("---")
             st.write("##")
