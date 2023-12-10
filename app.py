@@ -21,7 +21,7 @@ local_css("style/style.css")
 
 
 # Set Background Image
-def set_bg_hack(main_bg):
+def set_bg(main_bg):
     # set bg name
     main_bg_ext = "jpg"
     st.markdown(
@@ -35,7 +35,7 @@ def set_bg_hack(main_bg):
          """,
          unsafe_allow_html=True
      )
-set_bg_hack(main_bg="./images/bg_image1.jpg")
+set_bg(main_bg="./images/bg_image1.jpg")
 
 # --- Load Assets ---
 lottie_coding = load_lottieurl("https://lottie.host/ccd351fa-6625-4172-9082-8133922133d6/V9YuUtgXl2.json")
