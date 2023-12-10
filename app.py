@@ -4,6 +4,7 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 from st_on_hover_tabs import on_hover_tabs
 import base64
+import time
 
 st.set_page_config(page_title="My Webpage", page_icon=":world_map:", layout="wide")
 
@@ -18,6 +19,7 @@ def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)   
 local_css("style/style.css")
+
 
 # Set Background Image
 def set_bg_hack(main_bg):
@@ -75,11 +77,17 @@ if tabs =='Home':
         column_left, column_right = st.columns((2,1))
         with column_left:
             st.write("---")
-            st.title("This is my webpage")
+            st.title("Welcome to my Webpage")
             st.subheader("Hi :wave:, I am Richmond E. Hinggo")
-            st.write("I'm a Computer Engineering students from SNSU")
+            st.write("I am a Computer Engineering students from SNSU")
             st.write("To know my projects visit my github link below.")
-            st.write("[Github Link Here](https://github.com/YourEnemy1)")
+            # st.write()
+            bar = st.progress(0)
+            with st.spinner(text='Creating Github Link'):
+                time.sleep(3)
+                st.success("[Github Link Here](https://github.com/YourEnemy1)")
+                bar.progress(100)
+            
         with column_right:
             st.write("---")
             st.write("##")
@@ -107,7 +115,7 @@ elif tabs == 'Project':
                 This is a sample for fun web app only. 
                 """
             )
-            st.markdown("[Github Link](https://github.com/YourEnemy1/Basketball-Score-Counter)")
+            st.markdown("[Project Link](https://github.com/YourEnemy1/Basketball-Score-Counter)")
 
         st.write("---")
         st.write("##")
@@ -127,7 +135,7 @@ elif tabs == 'Project':
                 The game can be download in github link below.
                 """
             )
-            st.markdown("[Github Link](https://github.com/YourEnemy1/Jump-Game)")
+            st.markdown("[Project Link](https://github.com/YourEnemy1/Jump-Game)")
 
         st.write("---")
         st.write("##")
@@ -147,7 +155,7 @@ elif tabs == 'Project':
                 The game can be download in github link below.
                 """
             )
-            st.markdown("[Github Link](https://github.com/YourEnemy1/Python-PONG)")
+            st.markdown("[Project Link](https://github.com/YourEnemy1/Python-PONG)")
         
 
 # --- About Section ---
@@ -165,7 +173,7 @@ elif tabs == 'About':
                 - I'm going to finish this soon.
             """)
             st.write("For the meantime you can watch this youtube video to learn more about how to make a webpage!")
-            st.write("[Youtube](https://www.youtube.com/watch?v=VqgUkExPvLY&ab_channel=CodingIsFun)")
+            st.write("[Youtube](https://youtube.com/c/CodingIsFun)")
         with right_column:
             st_lottie(lottie_coding, height=450, key="coding")
 
