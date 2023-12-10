@@ -41,15 +41,6 @@ input[type=text]:focus, input[typer=message]:focus, input[type=email]:focus, tex
   background-color: lightblue;
   color: black;
 }
-
-.st-dh {
-  width: 100%;
-  padding: 0;
-  box-sizing: border-box;
-  border: 20px solid #b31717;
-  outline: none;
-}
-
 img {
   height: 450px;
   width: 100%;
