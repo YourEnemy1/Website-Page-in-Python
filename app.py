@@ -81,6 +81,7 @@ if tabs =='Home':
             st.write("I am a Computer Engineering students from SNSU")
             st.write("To know my projects visit my github link below.")
             st.write("[Github Link Here](https://github.com/YourEnemy1)")
+            st.write("Or hover to the left to see more of my content.")
         with column_right:
             st.write("---")
             st.write("##")
